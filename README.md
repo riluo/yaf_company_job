@@ -1,4 +1,4 @@
-php.iniÖĞyafÅäÖÃ£º
+php.iniä¸­yafé…ç½®ï¼š
 
 yaf.use_spl_autoload = 1
 yaf.use_namespace = 1
@@ -12,7 +12,7 @@ yaf.environ = "development"
 ;yaf.name_suffix = 1
 ;yaf.name_separator = ""
 
-nginxÅäÖÃ£º
+nginxé…ç½®ï¼š
 
 server {
     listen       *:80;
@@ -21,7 +21,7 @@ server {
     error_log    "D:/Visual-NMP-x64/logs/Nginx/DefaultWebSite-error.log";
     autoindex    on;
     index        index.php index.html index.htm;
-try_files $uri $uri/ /index.php$is_args$args;
+    try_files $uri $uri/ /index.php$is_args$args;
 
 
     location ~ (^/phpmyadmin|^/sql\x20buddy|^/memcache|^/memadmin|^/phpredisadmin|^/webgrind|^/eaccelerator|^/rockmongo)/.+\.php$ { 
