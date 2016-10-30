@@ -1,0 +1,57 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.weui_tabbar {
+    height: 60px;
+    bottom: 0;
+    position: fixed;
+}
+
+.page_title {
+    text-align:center;
+    font-size:34px;
+    color:#3cc51f;
+    font-weight:400;
+    margin:0 15%
+}
+
+.weui_label_6 {
+  display: block;
+  width: 6em;
+}
+
+.logout {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.white { 
+    color: #979797;
+    font-size: 13px;
+    border: solid 1px #e7e7e7; 
+    background: #fff; 
+} 
+.white:hover { 
+    background: #ededed; 
+} 
+.white:active { 
+    color: #999; 
+}
+
+.hd {
+    padding:2em 0
+}
+.page_desc {
+    text-align:center;
+    color:#888;
+    font-size:14px
+}
+
+.weui_panel_title {
+    padding: 0px 15px 0px;
+    color: #999999;
+    font-size: 13px;
+    position: relative;
+}

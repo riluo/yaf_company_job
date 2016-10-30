@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/dist/vendor/bootstrap/css/bootstrap.cerulean.css"/>
+    <link rel="stylesheet" href="/dist/vendor/jquery-treegrid/css/jquery.treegrid.css">
+    <link rel="stylesheet" href="/dist/css/app.css">
+
+    <script src="/dist/vendor/jquery/jquery.js"></script>
+    <script src="/dist/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="/dist/vendor/jquery-treegrid/js/jquery.treegrid.js"></script>
+    <script src="/dist/vendor/jquery-treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+    <script>
+        $(function () {
+            $('.tree').treegrid({
+                initialState: 'collapsed'
+            })
+        })
+    </script>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top app-header">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand navbar-brand-logo">
+                <img src="//fakeimg.pl/120x40" alt="" class="logo"/>
+            </div>
+        </div>
+        <nav class="navbar-collapse">
+            <ul class="nav navbar-nav ti-navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">作业 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">布置作业</a></li>
+                        <li><a href="#">管理作业</a></li>
+                        <li><a href="#">作业统计</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">我的班级</a></li>
+                <li><a href="#">题目管理</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+
+                <!-- 1 -->
+                <div class="panel panel-default" id="bookPanel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">选择教材</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <img src="//fakeimg.pl/500" alt=""/>
+                                    <div class="caption">
+                                        <p>2015年-北京版-二年级(下)</p>
+                                        <span class="label label-success">已选5题</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <img src="//fakeimg.pl/500" alt=""/>
+                                    <div class="caption">
+                                        <p>2015年-北京版-二年级(下)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="panel panel-default" id="bookContentPanel">
+                    <div class="panel-heading hidden">
+                        <h3 class="panel-title">选择目录</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <img src="//fakeimg.pl/500" alt=""/>
+                                    <div class="caption">
+                                        <p>2015年-北京版-二年级(下)</p>
+                                        <p>
+                                            <a href="#" class="btn btn-info">更换教材</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <table class="table table-bordered tree">
+                                    <tr class="treegrid-1"><td>第一章 集合与函数概念 <span class="label label-success pull-right">6</span></td></tr>
+                                    <tr class="treegrid-parent-1"><td>1．1 集合 <span class="label label-success pull-right">2</span></td></tr>
+                                    <tr class="treegrid-parent-1"><td>1．2 函数及其表示 <span class="label label-success pull-right">4</span></td></tr>
+                                    <tr class="treegrid-parent-1"><td>1．3 函数的基本性质</td></tr>
+                                    <tr class="treegrid-parent-1"><td>实习作业</td></tr>
+                                    <tr class="treegrid-parent-1"><td>小结</td></tr>
+                                    <tr class="treegrid-parent-1"><td>复习参考题</td></tr>
+                                    <tr class="treegrid-2"><td>第二章 基本初等函数（Ⅰ）</td></tr>
+                                    <tr class="treegrid-parent-2"><td>2．1 指数函数</td></tr>
+                                    <tr class="treegrid-parent-2"><td>2．2 对数函数</td></tr>
+                                    <tr class="treegrid-parent-2"><td>2．3 幂函数</td></tr>
+                                    <tr class="treegrid-parent-2"><td>小结</td></tr>
+                                    <tr class="treegrid-parent-2"><td>复习参考题</td></tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="panel panel-default" id="bookQuestionPanel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">选择题目</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="panel panel-default question-media-panel">
+                            <div class="panel-body">
+                                <div class="media-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur cum deserunt enim, error fugiat ipsum quod sequi similique veritatis.</p>
+                                </div>
+                                <div class="media-right">
+                                    <a href="#" class="btn btn-default">预览</a>
+                                </div>
+                            </div>
+                            <div class="panel-footer clearfix">
+                                <div class="pull-left">
+                                    <span class="label label-primary">题号 1.3</span>
+                                    <span class="label label-primary">页码 12</span>
+                                </div>
+                                <div class="checkbox checkbox-primary pull-right">
+                                    <input type="checkbox" id="checkbox1">
+                                    <label for="checkbox1">选中</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <div class="text-right">
+                            <a href="#" class="btn btn-primary btn-lg">下一步</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading panel-collapse-trigger"
+                         data-toggle="collapse"
+                         href="#side_menu">
+                        <h4 class="panel-title">作业</h4>
+                        <span class="menu-down glyphicon glyphicon-menu-down"></span>
+                    </div>
+                    <div id="side_menu" class="collapse in">
+                        <div class="panel-body list-group">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="#">布置作业</a></li>
+                                <li class="list-group-item"><a href="#">管理作业</a></li>
+                                <li class="list-group-item"><a href="#">作业统计</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
