@@ -1,0 +1,979 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>千域 - 新疆领先的精准采购搜索引擎</title>
+<meta content="千域网，新疆最大的精确采购搜索引擎，是中小企业实现精确采购搜索和精确广告投放的首选B2B电子商务平台。千域网满足中小企业用户低投入，高回报的发展需求，帮助中小企业更快,更有效的达成交易。" name="description">
+<meta content="千域,电子商务,B2B,网上贸易" name="keywords">
+<link href="css/newindex.css" rel="stylesheet" type="text/css" />
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div class="headtop_nav">
+<div class="headtop_nav_con_index clearfix">
+<div class="headtop_nav_con_l" style=" position:relative; z-index:9999">
+<a style="cursor:pointer;" title="设为主页" onclick="setHomepage1('http://china./');">设为首页</a>|&nbsp;&nbsp;
+<a href="#" onclick="addfavor1(location.href, document.title);" rel="sidebar" target="_self">加入收藏</a>
+</div>
+<div class="wdl" id="notlog_new">
+<div class="headtopcon_login2" >
+<span>
+<input type="hidden" name='gotourl' class ='gotourl'  value="">
+<input type="hidden" id="new_remember_state" name="remember_state"  value="1">
+<input name="username" id="new_username" type="text" class="input_top" value=""  onfocus="focus_log(this.id)" onblur="blur_log(this.id)" />
+<input name="passwd" id="new_passwd" type="password" class="input_top" value=""  onfocus="focus_log(this.id)" onblur="blur_log(this.id)"/>
+<a href="#void(0);"  target="_self" onclick='form_submit2();' rel="nofollow">登录</a>
+<a href="#"  rel="nofollow"><strong style=" font-weight:normal;">免费注册</strong></a>
+</span>
+</div>
+</div>
+<div class="ydl" style="display:none" id="login_new">
+<div class="headtopcon_login2" >
+<span>
+<a href="#"><i class="member_icon" id='user_name'></i></a>
+<a href="#" class="link_blue" target="_self">[退出]</a>
+</span>
+</div>
+</div>
+<div class="headtop_nav_con_r">
+<div class="headtop_nav_con_r_common topnavcon_user_center">
+<a href="#"><span class="">我的会员中心</span></a>
+<div class="topnavcon_user_popup" >
+<div class="topnavcon_arrow"></div>
+<div class="topnavcon_user_items">
+<dl style="_height:62px;">
+<dt>我是买家</dt>
+<dd><a href="#" rel="nofollow">发布求购</a></dd>
+<dd><a href="#" rel="nofollow">我的求购</a></dd>
+<dd><a href="#" rel="nofollow">我的询盘</a></dd>
+<dd><a href="#" rel="nofollow">我的招标</a></dd>
+<dd><a href="#" rel="nofollow">我的订单</a></dd>
+<div class="clear"></div>
+</dl>
+<div class="dash_line"></div>
+<dl style="border:none;">
+<dt>我是卖家</dt>
+<dd><a href="#2b./ucenter/product/product_add_new.php" rel="nofollow">发布供应</a></dd>
+<dd><a href="#2b./ucenter/product/product_gl_new.php" rel="nofollow">管理供应</a></dd>
+<dd><a href="#2b./ucenter/reg/complete_corp_info.php" rel="nofollow">我的商铺</a></dd>
+<dd><a href="#2b./ucenter/collect/new_pro_collect.php" rel="nofollow">我的收藏</a></dd>
+<div class="clear"></div>
+</dl>
+<div class="dash_line"></div>
+<dl>
+<dt>我要理财</dt>
+<dd><a href="#2b./ucenter/finace/mk_bank.php" rel="nofollow">投资理财</a></dd>
+<div class="clear"></div>
+</dl>
+</div>
+</div>
+</div>
+<div class="topnavcon_user_message">
+<div id="messagecount_2"></div>
+<div class="topnavcon_user_popup" style="width:135px">
+<div class="topnavcon_arrow"></div>
+<div class="topnavcon_user_item"><a href="#"><i id="kh_xunpan"></i>客户询盘</a></div>
+<div class="topnavcon_user_item"><a href="#"><i id="read_count"></i>匹配商机</a></div>
+<div class="topnavcon_user_item"><a href="#"><i id="head_zn_tender"></i>招标邀请</a></div>
+<div class="topnavcon_user_item"><a href="#2b./ucenter/msg/message_online.php" ><i id="fk_msg"></i>访客留言</a></div>
+<div class="topnavcon_user_item"><a href="#2b./ucenter/msg/new_system_msg.php" target="_blank"><i id="sys_msg"></i>系统消息</a></div>
+</div>
+</div>
+<div class="headtop_nav_con_r_common topnavcon_server">
+<span>千域服务</span>
+<div class="topnavcon_user_popup">
+<div class="topnavcon_arrow"></div>
+<div class="topnavcon_user_items">
+<dl style="border:none;">
+<dt>商务服务</dt>
+<dd><a href="#">采购助手</a></dd>
+<dd><a href="#">商机助手</a></dd>
+<dd><a href="#">订单通</a></dd>
+<dd><a href="#">标王</a></dd>
+<dd><a href="#">商城</a></dd>
+<dd><a href="#" >外贸通</a></dd>
+<div class="clear"></div>
+</dl>
+<div class="dash_line"></div>
+<dl>
+<dt>金融服务</dt>
+<dd><a href="#" >金融理财</a></dd>
+<dd><a href="#" >贷款</a></dd>
+<dd><a href="#" >信用卡</a></dd>
+<dd><a href="#" >酒店预定</a></dd>
+<dd><a href="#" >保险</a></dd>
+<dd><a href="# " >机票</a></dd>
+<div class="clear"></div>
+</dl>
+</div>
+</div>
+</div>
+<div class="headtop_nav_con_r_common topnavcon_nav_menu">
+<span>网站导航</span>
+<div class="topnavcon_user_popup">
+<div class="topnavcon_arrow"></div>
+<div class="nav_menu">
+<dl style="height:145px;">
+<dt>专业市场</dt>
+<dd><a href="#9/" >通用机械设备</a></dd>
+<dd><a href="#10/" >行业专业设备</a></dd>
+<dd><a href="#2/" >工业原料</a></dd>
+<dd><a href="#8/" >建筑设备</a></dd>
+<dd><a href="#6/" >工具</a></dd>
+<dd><a href="#1/" >建材与装饰材料</a></dd>
+<dd><a href="#24/" >商务服务</a></dd>
+<dd><a href="#149674/" >办公用品</a></dd>
+<dd><a href="#4/" >电子元器件</a></dd>
+<dd><a href="#13/" >仪器仪表</a></dd>
+<dd><a href="#23/" >汽摩用品/配件</a></dd>
+<dd><a href="#12/" >交通运输</a></dd>
+<div class="clear"></div>
+</dl>
+<div class="dash_line"></div>
+<dl style="border:none;">
+<dt>特色市场</dt>
+<dd><a href="#" >企业大全</a></dd>
+<dd><a href="#" >商机库</a></dd>
+<dd><a href="#2/introduce.html" >订单通</a></dd>
+<dd><a href="#" >中小企业招标</a></dd>
+<dd><a href="#" >采购百科</a></dd>
+<dd><a href="#" >精品供应商</a></dd>
+<dd><a href="#" >贷款融资理财</a></dd>
+<div class="clear"></div>
+</dl>
+</div>
+</div>
+</div>
+<div class="headtop_nav_con_r_common topnavcon_help">
+<span>帮助</span>
+<div class="topnavcon_user_popup" style=" display:none;">
+<div class="topnavcon_arrow"></div>
+<div class="nav_help">
+<dl>
+<dd><a href="#" >帮助中心</a></dd>
+<dd><a href="##" target="_self" onclick="doiframeopinionadd();">意见反馈</a></dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="headtopcon_user_member">&nbsp;&nbsp; <a href="#"> 国际站</a></div>
+</div>
+</div>
+</div>
+<div class="i_header clearfix">
+<div class="i_logo"><a href="#" title="新疆网"><img src="images/logo.png"  alt="（新疆网）" /></a></div>
+<div class="i_search">
+<ul class="i_search_tab">
+<li><a id="search_pro" href="#:void(0);" class="i_search_tab_focus" onfocus="this.blur()" onclick="change_type(1)" target="_self" >产品</a></li>
+<li><a id="search_pro" href="#:void(0);" onfocus="this.blur()" onclick="change_type(2)" target="_self" >企业</a><i></i></li>
+<li><a href="#:void(0);" onclick="change_type(3)" target="_self">商机</a></li>
+<li><a href="#" target="_blank">贷款</a></li>
+</ul>
+<div class="i_search_con">
+<input type="text" class="i_search_inputtxt" id="seacher"   onkeypress="testEnter(event)" value="" onmouseout="this.style.bordercolor='#ffffff'" onmouseover="this.style.bordercolor='#fff'" onblur="fun_blur();" onfocus="fun_focus();" name="q" />
+<input type='hidden' id='search_type' value=1>
+<input type="button" class="i_search_btn" onclick="search()" />
+</div>
+<p class="i_search_keyword">
+<a href="#">搜索新体验 更多新功能</a>
+</p>
+<div class="i_autocomplete" id="autocomplete"></div>
+</div>
+<div class="i_freepost">
+<a href="#2b./ucenter/product/product_add_new.php"  title="免费发布供应信息" rel="nofollow">发布供应信息</a>
+<a href="#" title="免费发布求购信息" rel="nofollow">发布求购信息</a>
+</div>
+</div>
+<div class="f_content">
+<div class="f_nav">
+<ul>
+<li><a href="#">首页</a></li>
+<li><a href="#">商城</a></li>
+<li><a href="#">金融</a></li>
+<li><a href="#">商机库</a></li>
+<li><a href="#">千域商情</a></li>
+<li><a href="#">营销推广</a></li>
+<div class="clear"> </div>
+</ul>
+</div>
+
+<div class="clear"></div>
+
+
+<div class="diyilan">
+    <div class="yi_left">
+        <div class="kuang">
+            <div class="title"><div class="bghh">
+            <dl class="top-scdt clearfix">
+            	<dt id="my-date"><span class="my-year">2014</span><span class="my_month">05</span><span class="my_day">27</span></dt>
+                <dd>今日总商品<em>20051</em>件<br>
+                在线商家<em>5691</em>家
+                </dd>
+            </dl>
+            </div></div>
+            <div class="kuang_list">
+               <ul>
+                <li>
+                    <span class="nn_left"><a target="_blank" title="北京金易格新能源科技发展有限公司60兆瓦光伏电站组件招标公告--中国采招网" href="#-15986434-1.html">
+                    【求购】求购进口大米，请说通
+                    </a></span>
+                    <span class="nn_right">05-26</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <span class="nn_left"><a target="_blank" title="西京医院幼儿园教学楼新建工程招标公告--中国采招网" href="#-15973372-1.html">
+                    【展会】2014年上海葡萄酒展会
+                    </a></span>
+                    <span class="nn_right">05-26</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <span class="nn_left"><a target="_blank" title="北京金易格新能源科技发展有限公司60兆瓦光伏电站组件招标公告--中国采招网" href="#-15986434-1.html">
+                    【求购】求购进口大米，请说通
+                    </a></span>
+                    <span class="nn_right">05-26</span>
+                    <div class="clear"></div>
+                </li>
+                 <li>
+                    <span class="nn_left"><a target="_blank" title="雅图仕2014年5-12月装饰装修维修流标公告--中国采招网" href="#-15980511-6.html">
+                    【展会】2014年上海葡萄酒展会
+                    </a></span>
+                    <span class="nn_right">05-22</span>
+                    <div class="clear"></div>
+                </li>
+                <li><span class="nn_left"><a target="_blank" title="2014年5月份关于发电机组项目集中招标" href="#-42.html">【展会】2014年上海葡萄酒展会</a></span> <span class="nn_right">05-21</span>
+                <div class="clear"></div></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="kuang">
+            <div class="title2">
+                <h3><a target="_blank" title="地区重点项目汇总" href="#">政策信息</a></h3>
+                <div class="more"><a target="_blank" href="#">更多&gt;</a></div>
+            </div>
+            <div class="kuang_list2">
+               <ul>
+                 <li>
+                    <span class="nn_left"><a target="_blank" title="西京医院幼儿园教学楼新建工程招标公告--中国采招网" href="#-15973372-1.html">
+                    西京医院幼儿园教学楼新建工程招标公告
+                    </a></span>
+                    <span class="nn_right">05-26</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <span class="nn_left"><a target="_blank" title="北京金易格新能源科技发展有限公司60兆瓦光伏电站组件招标公告--中国采招网" href="#-15986434-1.html">
+                    北京金易格新能源科技发展有限公司60兆
+                    </a></span>
+                    <span class="nn_right">05-26</span>
+                    <div class="clear"></div>
+                </li>
+                 <li>
+                    <span class="nn_left"><a target="_blank" title="西京医院幼儿园教学楼新建工程招标公告--中国采招网" href="#-15973372-1.html">
+                    西京医院幼儿园教学楼新建工程招标公告
+                    </a></span>
+                    <span class="nn_right">05-26</span>
+                    <div class="clear"></div>
+                </li>
+                </ul></div>
+            <div style="padding: 7px 11px 11px 10px" class="kuang_list">
+                    <div class="pic"><a title="地区重点项目汇总--中国采招网" target="_blank" href="#"><img width="72" height="62" src="images/exam.jpg"></a></div>
+                <div class="pic_list">
+                    <ul>
+                        <li><span class="dian_hui">·</span> <a target="_blank" title="江苏省无锡市江阴市2014年度重点重大项目计划安排表--中国采招网" href="#-469.html">江苏省无锡市江阴</a></li>
+<li><span class="dian_hui">·</span> <a target="_blank" title="江苏省宿迁市泗洪县2014年度重点工程建设计划--中国采招网" href="#-468.html">江苏省宿迁市泗洪</a></li>
+<li><span class="dian_hui">·</span> <a target="_blank" title="江苏省淮安市2014年重大项目投资计划--中国采招网" href="#-467.html">江苏省淮安市20</a></li>
+
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yi_center">
+		<div id="wrap"><ul class="show rightnow" id="KinSlideshow"><li title="晟通铝模板"><a title="晟通铝模板" rel="nofollow" href="#?bmlink=580"><img width="520" title="晟通铝模板" alt="晟通铝模板" src="images/44919088922869.jpg" data-bd-imgshare-binded="1"></a></li><li title="永康门业博览会"><a title="永康门业博览会" rel="nofollow" href="#"><img width="520" title="永康门业博览会" alt="永康门业博览会" src="images/424317332647889.jpg" data-bd-imgshare-binded="1"></a></li><li title="2014铝百强评选"><a title="2014铝百强评选" rel="nofollow" href="#1.alu.cn/event/2014top100/"><img width="520" title="2014铝百强评选" alt="2014铝百强评选" src="images/23960719734412.jpg" data-bd-imgshare-binded="1"></a></li><li title="聚商易"><a title="聚商易" rel="nofollow" href="#"><img width="520" title="聚商易" alt="聚商易" src="images/291530649313485.jpg" data-bd-imgshare-binded="1"></a></li><li title="商优宝"><a title="商优宝" rel="nofollow" href="#59137.cn/"><img width="520" title="商优宝" alt="商优宝" src="images/473007595852487.jpg" data-bd-imgshare-binded="1"></a></li></ul><ul id="mumSl"><li style="width: 20%;" class=""><a target="_blank" href="#?bmlink=580">晟通铝模板</a></li><li style="width: 20%;" class=""><a target="_blank" href="#">永康门业博览会</a></li><li style="width: 20%;" class="inNow"><a target="_blank" href="#1.alu.cn/event/2014top100/">2014铝百强评选</a></li><li style="width: 20%;" class=""><a target="_blank" href="#">聚商易</a></li><li style="width: 20%;" class=""><a target="_blank" href="#59137.cn/">商优宝</a></li></ul></div>
+		<div id="lb" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 36px;"><a title="采购匹配" class="poa" href="/buy/">采购匹配</a>
+<ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 432px; top: -72px;"><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购打包机" href="/buy/4012852.html">打包机</a>" 匹配 "<a title="河南通利机器制造有限公司" href="#sd2636270">河南通利机器制造有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购扩散板" href="/buy/4012826.html">扩散板</a>" 匹配 "<a title="上海久诚橡塑科技有限公司" href="#shjc">上海久诚橡塑科技有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购瓷砖角线，填缝剂，美缝剂" href="/buy/4013043.html">填缝剂</a>" 匹配 "<a title="东莞远志公司" href="#dgdcyuanzhi">东莞远志公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购22#圆钢HPB300" href="/buy/4013047.html">圆钢</a>" 匹配 "<a title="上海佳译金属制品有限公司（销售）" href="#shjiayi1">上海佳译金属制品有限公司（销售）</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="铝合金门窗、瓦片、GRE、石材" href="/buy/4013048.html">铝合金门窗</a>" 匹配 "<a title="佛山市来德美门窗有限公司" href="#ldmwd">佛山市来德美门窗有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购套装门" href="/buy/4012985.html">套装门</a>" 匹配 "<a title="佛山市堡福经典名门厂" href="#jiadefu">佛山市堡福经典名门厂</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购生态门" href="/buy/4012984.html">生态门</a>" 匹配 "<a title="佛山市希格玛节能科技有限公司" href="#haogeduan">佛山市希格玛节能科技有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购穿孔复合吸音板" href="/buy/4012983.html">吸音板</a>" 匹配 "<a title="江苏靖江宇航建材有限公司" href="#jsyh160">江苏靖江宇航建材有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购涂料" href="/buy/4012937.html">涂料</a>" 匹配 "<a title="佛山市嘉柏丽涂料有限公司" href="#caboli88">佛山市嘉柏丽涂料有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="采购门窗铝型材" href="/buy/4012944.html">铝型材</a>" 匹配 "<a title="上海佳译金属制品有限公司（销售）" href="#shjiayi1">上海佳译金属制品有限公司（销售）</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="采购木门" href="/buy/4012946.html">木门</a>" 匹配 "<a title="德华兔宝宝装饰新材股份有限公司" href="#tbb09">德华兔宝宝装饰新材股份有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购全抛釉" href="/buy/4012953.html">全抛釉</a>" 匹配 "<a title="佛山市缘牌陶瓷有限公司" href="#junlingtc">佛山市缘牌陶瓷有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购混泥土搅拌机" href="/buy/4012924.html">搅拌机</a>" 匹配 "<a title="河北迪奥试验仪器设备有限公司" href="#L691930635">河北迪奥试验仪器设备有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="采购混凝土泵" href="/buy/4012923.html">混凝土泵</a>" 匹配 "<a title="湖南迦德建材科技有限公司" href="#plm5238217">湖南迦德建材科技有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="长期采购硅酮胶，发泡剂，不锈钢专用自喷漆" href="/buy/4012894.html">硅酮胶</a>" 匹配 "<a title="广州祥奥建材有限公司" href="#gzxiangao">广州祥奥建材有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购石膏板" href="/buy/4012919.html">石膏板</a>" 匹配 "<a title="上海继翔建筑装饰工程有限公司" href="#majiguang1976">上海继翔建筑装饰工程有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="采购s95矿粉" href="/buy/4012890.html">矿粉</a>" 匹配 "<a title="广德燕子岭彩砂有限公司" href="#yzlcaisha">广德燕子岭彩砂有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购 60*60全瓷砖 100000㎡ " href="/buy/4012783.html">瓷砖</a>" 匹配 "<a title="山东淄博博冠陶瓷有限公司" href="#boguantaoci">山东淄博博冠陶瓷有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购植筋胶" href="/buy/4012863.html">植筋胶</a>" 匹配 "<a title="北京聚升泽宇科贸有限公司" href="#JSZY">北京聚升泽宇科贸有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购PVC地板" href="/buy/4012858.html">PVC地板</a>" 匹配 "<a title="佛山市乐金优利贸易有限公司" href="#lejinyouli">佛山市乐金优利贸易有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购打包机" href="/buy/4012852.html">打包机</a>" 匹配 "<a title="河南通利机器制造有限公司" href="#sd2636270">河南通利机器制造有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购扩散板" href="/buy/4012826.html">扩散板</a>" 匹配 "<a title="上海久诚橡塑科技有限公司" href="#shjc">上海久诚橡塑科技有限公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购瓷砖角线，填缝剂，美缝剂" href="/buy/4013043.html">填缝剂</a>" 匹配 "<a title="东莞远志公司" href="#dgdcyuanzhi">东莞远志公司</a>"</li><li style="overflow: hidden; float: none; width: 470px; height: 18px;">采购"<a title="求购22#圆钢HPB300" href="/buy/4013047.html">圆钢</a>" 匹配 "<a title="上海佳译金属制品有限公司（销售）" href="#shjiayi1">上海佳译金属制品有限公司（销售）</a>"</li></ul><div style="position:absolute;right:0;top:0;z-index:9;"><p><a title="来德美门业" rel="nofollow" target="_blank" href="click.bmindex.com/turn.aspx?bmlink=505"><img alt="来德美门业" src="images/955057038438999.gif" data-bd-imgshare-binded="1"></a></p></div></div>
+        <div id="adTurn"><a rel="nofollow" href="#?bmlink=293"><img src="images/1_huaxuan_125x120.jpg" alt="华轩幕墙材料" data-bd-imgshare-binded="1" width="120" height="114"></a>
+<a rel="nofollow" href="#"><img src="images/1_dd_125x120.jpg" alt="广告招租" data-bd-imgshare-binded="1" width="120" height="114"></a><a rel="nofollow" href="#?bmlink=293"><img src="images/1_huaxuan_125x120.jpg" alt="华轩幕墙材料" data-bd-imgshare-binded="1" width="120" height="114"></a>
+<a rel="nofollow" class="last" href="#"><img src="images/1_dd_125x120.jpg" alt="广告招租" data-bd-imgshare-binded="1" width="120" height="114"></a>
+</div>
+    </div>
+    <div class="yi_right">
+        <div class="zhuce">
+            <a style="color: #fff;" class="denglu" target="_blank" title="免费注册" href="#">
+                <b>免费注册</b></a> <a style="color: #fff;" class="zc" target="_blank" title="用户登录" onclick="return pub.login('7D24909FC08A6E08203D5A005AC7D5DC')" href="#"><b>用户登录</b></a>
+            <div class="clear">
+            </div>
+        </div>
+        <!--已登录之后-->
+        <div style="display: none;" class="zhuceafter">
+            <span class="a_left"><em class="namepp">&nbsp;</em><a style="color: #fff;" class="teshu" href="#"></a> <a style="color: #fff;" class="teshu03" href="#"><b>进入用户中心</b></a></span><span class="a_right"><a onclick="javascript:pub.logoutMember();return false;" href="#:void(0);"><b>退出</b></a></span>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="gongneng">
+            <ul class="accoradion" id="accoradion01">
+                <li class="active"><a class="header opened" href="#"><b>网站优势</b><span style="color: #bebebe; padding-left: 15px;" class="tishi">每天产品信息更新15000条</span></a>
+                    <ul style="display: block;">
+          				<li style="display: block;">
+                            <div class="tubiaoss">
+                                <span class="tb_bg"><a class="tb01" title="免费推广" target="_blank" href="#">免费推广</a></span>
+                                <span class="tb_bg"><a class="tb02a" title="商机匹配" target="_blank" href="#-2.html">商机匹配</a></span>
+                                <span style="margin-right: 0px;" class="tb_bg"><a class="tb04" title="精准搜索" target="_blank" href="#-1.html">精准搜索</a></span>
+                                <span class="tb_bg"><a class="tb13" title="企业小贷" target="_blank" href="#-1-1.html">企业小贷</a><em class="tuijian">&nbsp;</em></span>
+                                <span class="tb_bg"><a class="tb05" title="人力资源" target="_blank" href="#">人力资源</a></span>
+                                <span style="margin-right: 0px;" class="tb_bg"><a class="tb06a" title="政务服务" target="_blank" href="#-1.html">政务服务</a></span>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                  </ul>
+              </li>
+            </ul>
+            
+            <div class="intro fbg" id="tab01">
+                <div class="tabNav"><span class="first current">我是买家</span><span class="">我是卖家</span><span class="last">新手入门</span></div>
+                <div class="clear"></div>
+                <div class="content">
+                    <div class="tabCon" style="display: block;">
+                        <ul class="clearfix">
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1774/">采购商服务</a>] <a title="通过食品汇（食品品牌网）只能采购原料吗？" target="_blank" href="www.foodpp.cn/kf/show-4.html">通过食品汇（食品品牌网）只能</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1774/">采购商服务</a>] <a title="如何通过食品汇采购到满意的产品？" target="_blank" href="www.foodpp.cn/kf/show-3.html">如何通过食品汇采购到满意的产</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1774/">采购商服务</a>] <a title="发布询价单" target="_blank" href="www.foodpp.cn/member/my.php?mid=6&amp;action=add">发布询价单</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1774/">采购商服务</a>] <a title="找产品/卖家" target="_blank" href="www.foodpp.cn/kf/show-1.html">找产品/卖家</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1774/">采购商服务</a>] <a title="找产品/卖家" target="_blank" href="www.foodpp.cn/kf/show-1.html">找产品/卖家</a></li>
+                        </ul>
+                    </div>
+                    <div class="tabCon hide" style="display: none;">
+                        <ul class="clearfix">
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="如何在食品汇上发布产品信息?" target="_blank" href="www.foodpp.cn/kf/show-10.html">如何在食品汇上发布产品信息?</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="食品汇VIP修改公司名称" target="_blank" href="www.foodpp.cn/kf/show-9.html">食品汇VIP修改公司名称</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="关于申请食品汇发票" target="_blank" href="www.foodpp.cn/kf/show-8.html">关于申请食品汇发票</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="我要办理VIP" target="_blank" href="www.foodpp.cn/member/grade.php">我要办理VIP</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="我要办理VIP" target="_blank" href="www.foodpp.cn/member/grade.php">我要办理VIP</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="tabCon hide" style="display: none;">
+                        <ul class="clearfix">
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="如何在食品汇上发布产品信息?" target="_blank" href="www.foodpp.cn/kf/show-10.html">如何在食品汇上发布产品信息?</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="食品汇VIP修改公司名称" target="_blank" href="www.foodpp.cn/kf/show-9.html">食品汇VIP修改公司名称</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="关于申请食品汇发票" target="_blank" href="www.foodpp.cn/kf/show-8.html">关于申请食品汇发票</a></li>
+                            <li>[<a target="_blank" href="www.foodpp.cn/kf/list/1773/">供应商服务</a>] <a title="我要办理VIP" target="_blank" href="www.foodpp.cn/member/grade.php">我要办理VIP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+<div class="ad1000"> 
+<img width="1000" height="60" border="0" alt="" title="" src="images/0f000Qv8VtmtKLnWAA37Lf.gif">
+</div>
+<!--中部主要内容区 -->
+<div class="f_main">
+<!--=S nav -->
+<!-- 侧边分类 -->
+<div class="sidebar">
+<div class="sidebar_con">
+<dl class="sidebar_item">
+<dt><i class="sidebar_item_icon01"></i><span>明星企业</span></dt>
+<dd>
+<h3><a href="#9/">通用机械设备</a></h3>
+</dd>
+<dd>
+<h3><a href="#10/">行业专用设备</a></h3>
+</dd>
+<dd>
+<h3><a href="#8/">建筑设备</a></h3>
+</dd>
+<dd>
+<h3><a href="#11/">电气与能源设备</a></h3>
+</dd>
+<dd>
+<h3><a href="#13/">仪器仪表</a></h3>
+</dd>
+<dd>
+<h3><a href="#149804/">网络安防/通信广电设备</a></h3>
+</dd>
+<dd>
+<h3><a href="#14/">电脑/办公设备</a></h3>
+</dd>
+</dl>
+<dl class="sidebar_item">
+<dt><i class="sidebar_item_icon02"></i><span>招商推荐</span></dt>
+<dd>
+<h3><a href="#2/">原料辅料/初加工材料</a></h3>
+</dd>
+<dd>
+<h3><a href="#1/">建材与装饰材料</a></h3>
+</dd>
+<dd>
+<h3><a href="#3/">五金零部件/备品备件</a></h3>
+</dd>
+<dd>
+<h3><a href="#4/">电子元器件</a></h3>
+</dd>
+<dd>
+<h3><a href="#5/">电工电料/线缆照明</a></h3>
+</dd>
+<dd>
+<h3><a href="#6/">工具</a></h3>
+</dd>
+<dd>
+<h3><a href="#7/">MRO消耗易耗品</a></h3>
+</dd>
+</dl>
+<dl class="sidebar_item">
+<dt><i class="sidebar_item_icon03"></i><span>物流展会</span></dt>
+<dd>
+<h3><a href="#1450/"> 五一南京车展&ldquo;1元抢门票&rdquo; </a></h3>
+</dd>
+<dd>
+<h3><a href="#24/"> IARE打开&ldquo;智造&rdquo;工业之门 </a></h3>
+</dd>
+<dd>
+<h3><a href="#145859/"> 上海易驰快递有限公司 </a></h3>
+</dd>
+<dd>
+<h3><a href="#1455/"> 南京车博会掀黄金周购车狂潮 </a></h3>
+</dd>
+<dd>
+<h3><a href="#1455/">广州东际物流有限公司 </a></h3>
+</dd>
+<dd>
+<h3><a href="#145859/"> 上海易驰快递有限公司 </a></h3>
+</dd>
+<dd>
+<h3><a href="#24/"> IARE打开&ldquo;智造&rdquo;工业之门 </a></h3>
+</dd>
+</dl>
+</div>
+</div>
+
+<div class="industry">
+<h3 style="color:#333; font-size:14px; padding:0 0 5px 10px; margin:0; vertical-align:top; background:url(images/all_status.gif) -22px -150px no-repeat; border-bottom:3px solid #cacaca;">行业导航</h3>
+<dl class="industry_item mr50 mt10">
+<dt>
+<i class="hbFntWes">&#xf085;</i>
+<span><a href="#9/">通用机械设备</a> &#8226; <a href="#10/">行业专用设备</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#4657/" class="linesbg">金属切削机床</a>
+<a href="#5/3kbge47pldf.html" class="linesbg">数控机床</a>
+<a href="#182j2oelksd.html" class="linesbg">数控刀具</a>
+<a href="#3651/" class="linesbg">铣刀</a>
+<a href="#3649/" class="linesbg">车刀</a>
+<a href="#27885/" class="linesbg">破碎机</a>
+<a href="#27507/" class='linesbg'>通风机</a>
+<a href="#27509/" class="linesbg">工业风扇</a>
+<a href="#25865/" class="linesbg">离心机</a>
+<a href="#25865/" class="linesbg">分离机</a>
+<a href="#174282/" class="linesbg">过滤器</a>
+<a href="#26749/" class="linesbg">混合机</a>
+<a href="#26751/" class='linesbg'>捏合机</a>
+<a href="#4140/" class="linesbg">锅炉</a>
+<a href="#5vq2o4prjuv.html" class="linesbg">堆料机</a>
+<a href="#39/" class="linesbg">农业机械</a>
+<a href="#2035/" class="linesbg">饮料机械</a>
+<a href="#5898/" class="linesbg">服饰机械</a>
+<a href="#27928/" class='linesbg'>制冷设备</a>
+</dd>
+</dl>
+<dl class="industry_item mt10">
+<dt>
+<i class="hbFntWes">&#xf0c3;</i>
+<span><a href="#2/">工业原料</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#145532/" class="linesbg">塑料制品</a>
+<a href="#145533/" class="linesbg">橡胶制品</a>
+<a href="#26965/" class="linesbg">胶粘剂</a>
+<a href="#26687/" class="linesbg">齿轮油</a>
+<a href="#2b/6e62c7qcsds.html" class="linesbg">添加剂</a>
+<a href="#27599/" class="linesbg">甲醇</a>
+<a href="#147120/" class="linesbg">合成树脂</a>
+<a href="#28019/" class='linesbg'>绳类</a>
+<a href="#2490/" class="linesbg">密封圈</a>
+<a href="#5091/" class="linesbg">工具钢</a>
+<a href="#5092/" class="linesbg">不锈钢</a>
+<a href="#5093/" class="linesbg">特殊钢</a>
+<a href="#5108/" class="linesbg">铝合金材</a>
+<a href="#145322/" class="linesbg">磁铁</a>
+<a href="#27917/" class="linesbg">纺织制品</a>
+<a href="#28135/" class='linesbg'>扣类</a>
+<a href="#26603/" class="linesbg">活性炭</a>
+<a href="#26396/" class="linesbg">催化剂</a>
+<a href="#27447/" class="linesbg">木炭</a>
+<a href="#26884/" class="linesbg">染料</a>
+<a href="#2jbjpu2otfhg.html" class="linesbg">HEPA</a>
+<a href="#147889/" class="linesbg">印刷辅料</a>
+<a href="#27406/" class='linesbg'>燃料</a>
+</dd>
+</dl>
+<dl class="industry_item mr50">
+<dt>
+<i class="hbFntWes">&#xf0f7;</i>
+<span><a href="#1652/">建筑</a> &#8226; <a href="#26513/">园林</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#1652/" class="linesbg">工程机械</a>
+<a href="#3755/" class="linesbg">挖掘机</a>
+<a href="#4371/" class="linesbg">挖沟机</a>
+<a href="#146505/" class="linesbg">起重机械</a>
+<a href="#26747/" class="linesbg">搅拌机</a>
+<a href="#3760/" class='linesbg'>路面机械</a>
+<a href="#148965/" class="linesbg">凿岩机</a>
+<a href="#4367/" class="linesbg">推土机</a>
+<a href="#4543/" class="linesbg">夯实机</a>
+<a href="#3758/" class="linesbg">桩工机械</a>
+<a href="#3761/" class="linesbg">混凝土机械</a>
+<a href="#145761/" class='linesbg'>手推车</a>
+<a href="#26513/" class="linesbg">园林设施</a>
+<a href="#2187/" class="linesbg">绿化苗木</a>
+<a href="#2188/" class="linesbg">园艺花卉</a>
+<a href="#26090/" class="linesbg">石材</a>
+<a href="#3254/" class="linesbg">天然大理石</a>
+<a href="#27346/" class="linesbg">井盖</a>
+<a href="#26240/" class="linesbg">景观石</a>
+<a href="#26515/" class='linesbg'>假山塑石</a>
+</dd>
+</dl>
+<dl class="industry_item">
+<dt>
+<i class="hbFntWes">&#xf015;</i>
+<span><a href="#1/">装修建材</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#149238/" class="linesbg">复合管</a>
+<a href="#53/7pphurv6odm.html" class="linesbg">PERT</a>
+<a href="#2572/" class="linesbg">管件</a>
+<a href="#5/6g4iensul4.html" class="linesbg">镀锌管</a>
+<a href="#2odch5g9evlg.html" class="linesbg">防火板</a>
+<a href="#2646/" class="linesbg">螺纹钢</a>
+<a href="#7/5krhkp4t8sm.html" class='linesbg'>防腐木</a>
+<a href="#149220/" class="linesbg">保温隔热涂料</a>
+<a href="#5077/" class="linesbg">岩棉制品</a>
+<a href="#5082/" class="linesbg">软木制品</a>
+<a href="#5079/" class="linesbg">玻璃棉制品</a>
+<a href="#29/d3csj1d4k7c.html" class="linesbg">硅酸铝</a>
+<a href="#1617/" class="linesbg">水泥</a>
+<a href="#4998/" class='linesbg'>建筑涂料</a>
+<a href="#5975/" class="linesbg">幕墙</a>
+<a href="#25487/" class="linesbg">吊顶装饰材料</a>
+<a href="#145478/" class="linesbg">玻璃纤维布</a>
+<a href="#89/363luknn2j2g.html" class="linesbg">塑钢</a>
+<a href="#5098/" class="linesbg">铝合金</a>
+<a href="#145516/" class="linesbg">门</a>
+<a href="#145517/" class="linesbg">窗</a>
+<a href="#26617/" class='linesbg'>楼梯</a>
+</dd>
+</dl>
+<dl class="industry_item mr50">
+<dt>
+<i class="hbFntWes">&#xf083;</i>
+<span><a href="#4/">电子</a> &#8226; <a href="#11/">电气设备</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#1/19da73pt96r8.html" class="linesbg">单片机</a>
+<a href="#4380/" class="linesbg">电容器</a>
+<a href="#4456/" class="linesbg">连接器</a>
+<a href="#147027/" class="linesbg">光敏元件</a>
+<a href="#147013/" class="linesbg">温敏元件</a>
+<a href="#4469/" class='linesbg'>滤波器</a>
+<a href="#148283/" class="linesbg">CCD</a>
+<a href="#4181/" class="linesbg">低压断路器</a>
+<a href="#3125/" class="linesbg">电线电缆</a>
+<a href="#4392/" class="linesbg">开关</a>
+<a href="#4179/" class="linesbg">插头</a>
+<a href="#3140/" class="linesbg">LED灯具</a>
+<a href="#3122/" class="linesbg">灯具灯饰</a>
+<a href="#3172/" class='linesbg'>裸电线</a>
+<a href="#2920/" class="linesbg">电力变压器</a>
+<a href="#2965/" class="linesbg">变频器</a>
+<a href="#2911/" class="linesbg">直流电动机</a>
+<a href="#2908/" class="linesbg">移动电站</a>
+<a href="#2078/" class="linesbg">防雷设备</a>
+<a href="#140/" class='linesbg'>安防监控系统</a>
+</dd>
+</dl>
+<dl class="industry_item">
+<dt>
+<i class="hbFntWes">&#xf013;</i>
+<span><a href="#5769/">泵</a> &#8226; <a href="#146256/">阀门</a> &#8226; <a href="#2468/">轴承</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#6/6r1pkbf9ln6.html" class="linesbg">离心泵</a>
+<a href="#42/6d6ognu2v5u.html" class="linesbg">计量泵</a>
+<a href="#5773/" class="linesbg">真空泵</a>
+<a href="#57/26ln1fj12c1g.html" class="linesbg">水泵</a>
+<a href="#9/gpt3jshcfa4.html" class="linesbg">油泵</a>
+<a href="#9/5svl61m9d1b.html" class="linesbg">耐腐蚀泵</a>
+<a href="#2f/n3au8cf5mo.html" class='linesbg'>增压泵</a>
+<a href="#3a/248d6rjtje2g.html" class="linesbg">闸阀</a>
+<a href="#85/4cbsda5nlg1.html" class="linesbg">截止阀</a>
+<a href="#92/5lh2q7ef1o7.html" class="linesbg">球阀</a>
+<a href="#2b/69esf0hmloh.html" class="linesbg">蝶阀</a>
+<a href="#5/33ndle6pht2.html" class="linesbg">安全阀</a>
+<a href="#2uilcj7vh1p.html" class="linesbg">电磁阀</a>
+<a href="#4/6ifar56ko3e.html" class='linesbg'>真空阀</a>
+<a href="#2469/" class="linesbg">滚动轴承</a>
+<a href="#9/5q0d06ujlru.html" class="linesbg">圆柱滚子轴承</a>
+<a href="#7/7eojkom7f5t.html" class="linesbg">绝缘轴承</a>
+<a href="#2470/" class="linesbg">滑动轴承</a>
+<a href="#7pnsrbchlc1.html" class='linesbg'>关节轴承</a>
+</dd>
+</dl>
+<dl class="industry_item mr50">
+<dt>
+<i class="hbFntWes">&#xf0ad;</i>
+<span><a href="#6/">工具</a> &#8226; <a href="#3/">零配件</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#2687/" class="linesbg">电动工具</a>
+<a href="#2587/" class="linesbg">钳子</a>
+<a href="#2591/" class="linesbg">剪子</a>
+<a href="#3311/" class="linesbg">磨具磨料</a>
+<a href="#2590/" class="linesbg">工具刀</a>
+<a href="#2694/" class="linesbg">电锤</a>
+<a href="#217025/" class='linesbg'>吸尘吹风机</a>
+<a href="#173997/" class="linesbg">实验台</a>
+<a href="#2488/" class="linesbg">密封件</a>
+<a href="#9a/5fsijt3n0ds.html" class="linesbg">麻布轮</a>
+<a href="#83/7i9v8r1qv2a.html" class="linesbg">扫路刷</a>
+<a href="#25609/" class="linesbg">模具</a>
+<a href="#3375/" class="linesbg">通用弹簧</a>
+<a href="#148529/" class='linesbg'>托辊</a>
+<a href="#3312/" class="linesbg">砂轮</a>
+<a href="#1mtnp50mopg8.html" class="linesbg">滚珠丝杆</a>
+<a href="#2148/" class="linesbg">螺母</a>
+<a href="#98/" class="linesbg">传动件</a>
+<a href="#25804/" class="linesbg">汽车轮胎</a>
+<a href="#26988/" class='linesbg'>安全网</a>
+</dd>
+</dl>
+<dl class="industry_item">
+<dt>
+<i class="hbFntWes">&#xf0b1;</i>
+<span><a href="#25892/">包装</a> &#8226; <a href="#26955/">仓储</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#5/5kveueqedmq.html" class="linesbg">包装袋</a>
+<a href="#25928/" class="linesbg">塑料袋</a>
+<a href="#149555/" class="linesbg">无纺布袋</a>
+<a href="#145601/" class="linesbg">礼品包装</a>
+<a href="#149730/" class="linesbg">胶带</a>
+<a href="#1b9moe0h5.html" class="linesbg">胶纸</a>
+<a href="#145680/" class='linesbg'>托盘</a>
+<a href="#25925/" class="linesbg">塑料箱</a>
+<a href="#25936/" class="linesbg">玻璃瓶</a>
+<a href="#3/5a2h7kqig5c.html" class="linesbg">包装箱</a>
+<a href="#25913/" class="linesbg">纸箱</a>
+<a href="#25993/" class="linesbg">黄纸板</a>
+<a href="#25984/" class="linesbg">玻璃纸</a>
+<a href="#3626/" class='linesbg'>包装机械</a>
+<a href="#149751/" class="linesbg">不干胶标签</a>
+<a href="#3629/" class="linesbg">封口机</a>
+<a href="#174261/" class="linesbg">打码机</a>
+<a href="#3629/" class="linesbg">封口机</a>
+<a href="#5843/" class="linesbg">喷码机</a>
+<a href="#27481/" class='linesbg'>装卸机械</a>
+</dd>
+</dl>
+<dl class="industry_item mr50">
+<dt>
+<i class="hbFntWes">&#xf109;</i>
+<span><a href="#149674/">办公用品</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#38/345uh4n9hu4g.html" class="linesbg">打印机</a>
+<a href="#3420/" class="linesbg">扫描仪</a>
+<a href="#4147/" class="linesbg">墨盒</a>
+<a href="#4148/" class="linesbg">墨水</a>
+<a href="#149748/" class="linesbg">标签</a>
+<a href="#4161/" class="linesbg">传真纸</a>
+<a href="#592/" class='linesbg'>笔记本电脑</a>
+<a href="#4314/" class='linesbg'>台式机</a>
+<a href="#4483/" class="linesbg">刻录光盘</a>
+<a href="#615/" class="linesbg">移动硬盘</a>
+<a href="#993/" class="linesbg">铅笔</a>
+<a href="#3437/" class="linesbg">传真机</a>
+<a href="#148462/" class='linesbg'>固定电话</a>
+<a href="#27065/" class="linesbg">会议桌</a>
+<a href="#33/1edi1tga4uvg.html" class="linesbg">铁皮柜</a>
+<a href="#27067/" class="linesbg">办公台</a>
+<a href="#150141/" class="linesbg">报刊架</a>
+<a href="#151001/" class="linesbg">考勤机</a>
+<a href="#3465/" class='linesbg'>电话会议系统</a>
+</dd>
+</dl>
+<dl class="industry_item">
+<dt>
+<i class="hbFntWes">&#xf0e4;</i>
+<span><a href="#13/">仪器仪表</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#3379/" class="linesbg">计量仪表</a>
+<a href="#3380/" class="linesbg">流量计</a>
+<a href="#3383/" class="linesbg">压力表</a>
+<a href="#3384/" class="linesbg">温度表</a>
+<a href="#147058/" class="linesbg">湿度计</a>
+<a href="#3386/" class="linesbg">水表</a>
+<a href="#3387/" class='linesbg'>电表</a>
+<a href="#3560/" class="linesbg">电工仪器仪表</a>
+<a href="#5172/" class="linesbg">万用表</a>
+<a href="#5175/" class="linesbg">钳形表</a>
+<a href="#26712/" class="linesbg">示波器</a>
+<a href="#3558/" class="linesbg">光学仪器</a>
+<a href="#3405/" class='linesbg'>测距仪</a>
+<a href="#3565/" class="linesbg">衡器</a>
+<a href="#4763/" class="linesbg">桌面秤</a>
+<a href="#174239/" class="linesbg">弹簧秤</a>
+<a href="#4881/" class="linesbg">台秤</a>
+<a href="#3564/" class="linesbg">量具量仪</a>
+<a href="#4491/" class="linesbg">卡尺</a>
+<a href="#4499/" class="linesbg">千分尺</a>
+<a href="#148531/" class='linesbg'>深度尺</a>
+</dd>
+</dl>
+<dl class="industry_item industry_item_bottom mr50">
+<dt>
+<i class="hbFntWes">&#xf0f0;</i>
+<span><a href="#24/">商务服务</a></span>
+</dt>
+<dd class="index_tips">
+<a href="#28061/" class="linesbg">台签</a>
+<a href="#148986/" class="linesbg">广告服务</a>
+<a href="#1517/" class="linesbg">翻译服务</a>
+<a href="#1520/" class="linesbg">公关策划</a>
+<a href="#9/f9kqtl4fb54.html" class="linesbg">税务代理</a>
+<a href="#8/3qq88snpq94g.html" class='linesbg'>人事代理</a>
+<a href="#7/6r3c866f76a.html" class="linesbg">劳务外包</a>
+<a href="#6usd9p591g.html" class="linesbg">地产中介</a>
+<a href="#148561/" class="linesbg">搬家服务</a>
+<a href="#148713/" class="linesbg">投资咨询</a>
+<a href="#148714/" class='linesbg'>市场调研</a>
+<a href="#1518/" class="linesbg">认证服务</a>
+<a href="#1534/" class="linesbg">管理培训</a>
+<a href="#1453/" class="linesbg">仓储物流业</a>
+<a href="#1489/" class="linesbg">仓储业</a>
+<a href="#1523/" class="linesbg">会展服务</a>
+<a href="#148580/" class='linesbg'>进出口服务</a>
+</dd>
+</dl>
+<dl class="industry_item industry_item_bottom">
+<dt>
+<i class="hbFntWes">&#xf07a;</i>
+<span>生活消费</span>
+</dt>
+<dd class="index_tips">
+<a href="#91/" class="linesbg">男装</a>
+<a href="#150855/" class="linesbg">鞋</a>
+<a href="#278/" class="linesbg">帽子</a>
+<a href="#1127/" class="linesbg">箱包</a>
+<a href="#1128/" class="linesbg">钟表</a>
+<a href="#1129/" class="linesbg">眼镜</a>
+<a href="#92/" class="linesbg">女装</a>
+<a href="#318/" class="linesbg">饮料</a>
+<a href="#435/" class='linesbg'>大家电</a>
+<a href="#544/" class="linesbg">手机</a>
+<a href="#591/" class="linesbg">平板电脑</a>
+<a href="#448/" class="linesbg">空调</a>
+<a href="#150781/" class="linesbg">母婴用品</a>
+<a href="#1888/" class="linesbg">玩具</a>
+<a href="#883/" class="linesbg">乐器</a>
+<a href="#794/" class="linesbg">户外用品</a>
+<a href="#732/" class='linesbg'>纸牌</a>
+<a href="#310/" class="linesbg">首饰品</a>
+<a href="#1088/" class="linesbg">宗教用品</a>
+<a href="#1041/" class="linesbg">礼品</a>
+<a href="#1315/" class="linesbg">保健品</a>
+<a href="#148054/" class="linesbg">医疗器具</a>
+<a href="#145735/" class='linesbg'>美容仪器</a>
+</dd>
+</dl>
+</div>
+<div class="clear"></div>
+<div class="ad1000" style="margin-top:-22px;"> 
+<img width="1000" height="60" border="0" alt="" title="" src="images/0f000Qv8VtmtKLnWAA37Lf.gif">
+</div>
+
+
+<section class="complex layout">
+<header class="complex-hd header">
+<h3 class="title"><span class="ms-yh">综合资讯</span></h3>
+<nav class="complex-nav f_r">
+<ul class="clearfix">
+<li class="nbg"><a href="" rel="nofollow">品牌</a></li>
+                    <li><a href="hhttp:///news/">资讯</a></li>
+<li><a href="/quote/">行情</a></li>
+<li><a href="/sell/">产品</a></li>
+<li><a href="/so/invest-htm-kw-.html">招商</a></li>
+                    <li><a href="/so/buy-htm-kw-.html">求购</a></li>
+<li><a href="/company/">公司</a></li>
+<li><a href="/special/" rel="nofollow">活动</a></li>
+<li><a href="exhibit.ciidoo.com/">展会</a></li>
+<li><a href="/wsbk/" rel="nofollow">百科</a></li>
+<li><a href="/photo/" rel="nofollow">图片</a></li>
+<li><a href="/video/" rel="nofollow">采视</a></li>
+</ul>
+</nav>
+</header>
+<div class="imain clearfix">
+<div class="hot-submenu">
+<ul class=" clearfix">
+<li><a href="/news/list/61223/">科技资讯</a></li>
+<li><a href="/news/list/61227/">电子商务</a></li>
+<li><a href="/news/list/61226/">财经资讯</a></li>
+<li><a href="/news/list/58820/">创业人物</a></li>
+<li><a href="/news/list/58827/">农业</a></li>
+<li><a href="/news/list/61228/">能源</a></li>
+<li><a href="/news/list/58831/">食品</a></li>
+<li><a href="/news/list/58840/">旅游动态</a></li>
+<li><a href="bbs.ciidoo.com/forum.php">商人论坛</a></li>
+</ul>
+</div>
+<dl>
+<dt>采道图片</dt>
+<dd class="complex-img">
+<a href="/photo/show-451.html" class="complex-img-link"><img width="130" height="85" alt="罕见白色座头鲸现身澳大利亚" src="images/11-23-22-85-1.jpg" data-bd-imgshare-binded="1"><span class="complex-img-mask"></span><span class="complex-img-des">罕见白色座头鲸现身</span></a>
+</dd>
+<dd class="complex-list">
+<ul>
+<li><a href="/photo/show-455.html" class="blue">全球那些令人窒息的疯狂冒险</a></li><li><a href="#">女孩乘公交被骚扰20分钟未反抗</a></li><li><a href="/photo/show-453.html">上海市民公路旁捡到1.6米长鳄鱼 </a></li><li><a href="#">浙江黄岩一水库6年首泄洪 冲出一</a></li></ul>
+</dd>
+</dl>
+<dl class="last">
+<dt>采道资讯</dt>
+<dd class="complex-img">
+<a href="/news/show-3611.html" class="complex-img-link"><img width="130" height="85" alt="TD-LTE将迎大扩军 全球WiMAX企业有望集体加入|运营商|TD-LTE|WiMAX" src="images/01-05-40-77-1.jpg" data-bd-imgshare-binded="1"><span class="complex-img-mask"></span><span class="complex-img-des">TD-LTE将迎大扩军 </span></a>
+</dd>
+<dd class="complex-list">
+<ul>
+<li><a href="/news/show-3698.html" class="blue">两会将实行矿泉水"实名制"杜绝</a></li><li><a href="/news/show-3689.html">中国9城市儿童食品添加剂摄入情</a></li><li><a href="/news/show-3585.html">13岁女孩偷家钱买手机 因不愿母</a></li><li><a href="/news/show-3599.html">银行收费新规剑指乱收费 倒逼银</a></li></ul>
+</dd>
+</dl>
+<dl>
+<dt>采道展会</dt>
+<dd class="complex-img">
+<a href="exhibit.ciidoo.com/show-476.html" title="2014年11月21日 [北京]" class="complex-img-link">
+<img width="130" height="85" alt="2014年印尼食品及食品配料展" src="images/13-11-47-99-11144.jpg" data-bd-imgshare-binded="1">
+<span class="complex-img-mask"></span>
+<span class="complex-img-des">2014年印尼食品及食品配料展</span>
+</a>
+</dd>
+<dd class="complex-list">
+<ul>
+<li><a href="exhibit.ciidoo.com/show-476.html" title="2014年11月21日 [北京]" class="f_orange">2014年印尼食品及食品配料展</a></li>
+<li><a href="exhibit.ciidoo.com/show-454.html" title="2014年11月28日 [北京市]">2014北京有机蔬菜展览会</a></li>
+<li><a href="exhibit.ciidoo.com/show-453.html" title="2014年11月28日 [北京市]">2014北京有机食品展览会</a></li>
+<li><a href="exhibit.ciidoo.com/show-452.html" title="2014年11月28日 [北京市]">2014第十三届（北京）国际有机食品和绿色食品博览会</a></li>
+</ul>
+</dd>
+</dl>
+<dl class="last">
+<dt>采道视频</dt>
+<dd class="complex-img">
+<a title="普华永道：今年中国企业并购将更活跃,上传于02-28 21:27" href="/video/show-971.html" class="complex-img-link">
+<img width="130" height="85" alt="普华永道：今年中国企业并购将更活跃" src="images/01270F1F4652E6F61F86FC00000000949C386C-2148-C843-BDB8-35812E00B1EF.jpg" data-bd-imgshare-binded="1">
+<span class="complex-img-mask"></span>
+<span class="complex-img-des">共有156人选择观看</span>
+</a>
+</dd>
+<dd class="complex-list">
+<ul>
+<li><a href="/video/show-971.html" title="上传于02-28 21:27, 共有156人选择观看" class="f_orange">普华永道：今年中国企业并购将更活跃</a></li>
+<li><a href="/video/show-162.html" title="上传于04-07 11:16, 共有2036人选择观看">黑木耳新丝路平面模特，车模"的孙静雅晒自拍</a></li>
+<li><a href="/video/show-161.html" title="上传于04-05 23:47, 共有1406人选择观看">赵本山已经死亡？独家调查，解疑释惑</a></li>
+<li><a href="/video/show-135.html" title="上传于10-09 01:15, 共有1265人选择观看">于丹讲座发现你的心灵（一）</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<aside class="iright">
+<header class="bbshot clearfix">
+<h3 class="f_l"><span>社区热点</span></h3>
+<span class="f_r"><a href="/bbs/portal.php" rel="nofollow">更多热帖</a></span>
+</header>
+<div class="swbk">
+<ol>
+<li><a target="_blank" href="bbs.ciidoo.com/forum.php?mod=viewthread&amp;tid=4837">媒体曝光牙签肉黑作坊：掉地上连狗都不吃</a> </li>
+<li><a target="_blank" href="bbs.ciidoo.com/forum.php?mod=viewthread&amp;tid=4225">诚邀斑竹，共建辉煌</a> </li>
+<li><a target="_blank" href="bbs.ciidoo.com/forum.php?mod=viewthread&amp;tid=2970">[农家小院群英谱]+花香伴生活+湖北桂花香</a> </li>
+<li><a target="_blank" href="bbs.ciidoo.com/forum.php?mod=viewthread&amp;tid=2520">UVLED光源又开始创新了</a> </li>
+<li><a target="_blank" href="bbs.ciidoo.com/forum.php?mod=viewthread&amp;tid=2378">菜鸟做服装服装，从零到高手，真实的经验分享！！</a> </li>
+<li><a target="_blank" href="bbs.ciidoo.com/forum.php?mod=viewthread&amp;tid=1756">依然爱你-----续秋水 你若不离，我便不弃</a> </li>
+<li><a target="_blank" href="bbs.ciidoo.com/forum.php?mod=viewthread&amp;tid=1755">【纯洁的一天】+幸福小女人</a> </li>
+</ol> 
+</div>
+</aside>
+</section>
+<section class="layout">
+<article class="complex-fly">
+<header class="header">
+<h3 class="ms-yh">您可能感兴趣</h3>
+</header>
+<div class="content hover-li">
+<ul class="clearfix">
+<li><dl><dt class="vertical-img"><a href="#" class="box-img"><img width="100" height="100" alt="洋葱切粒机，辣椒切粒机" src="images/16-52-57-28-15316.jpg.thumb.jpg" data-bd-imgshare-binded="1"></a></dt><dd class="description"><a href="/sell/show-308070.html" title="洋葱切粒机，辣椒切粒机">洋葱切粒机，辣椒切粒机</a></dd></dl></li>
+<li><dl><dt class="vertical-img"><a href="#" class="box-img"><img width="100" height="100" alt="陕西激光切割机" src="images/11-53-26-41-28091.jpg.thumb.jpg" data-bd-imgshare-binded="1"></a></dt><dd class="description"><a href="/sell/show-307977.html" title="陕西激光切割机">陕西激光切割机</a></dd></dl></li>
+<li><dl><dt class="vertical-img"><a href="#" class="box-img"><img width="100" height="100" alt="三菱Q12HCPU FX2N 4AD A3NC" src="images/15-52-29-64-13992.jpg.thumb.jpg" data-bd-imgshare-binded="1"></a></dt><dd class="description"><a href="/sell/show-301388.html" title="三菱Q12HCPU FX2N 4AD A3NC">三菱Q12HCPU FX2N 4AD A3NC</a></dd></dl></li>
+<li><dl><dt class="vertical-img"><a href="#" class="box-img"><img width="100" height="100" alt="光电专用撕膜胶带偏光片撕膜胶带" src="images/10-09-21-85-9364.jpg.thumb.jpg" data-bd-imgshare-binded="1"></a></dt><dd class="description"><a href="/sell/show-300980.html" title="光电专用撕膜胶带偏光片撕膜胶带">光电专用撕膜胶带偏光片撕膜胶带</a></dd></dl></li>
+<li><dl><dt class="vertical-img"><a href="#" class="box-img"><img width="100" height="100" alt="供应忆江南壁纸漆，艺术环保新型室内装修涂料" src="images/10-31-30-46-10953.jpg.thumb.jpg" data-bd-imgshare-binded="1"></a></dt><dd class="description"><a href="/sell/show-290106.html" title="供应忆江南壁纸漆，艺术环保新型室内装修涂料">供应忆江南壁纸漆，艺术环保新型室内装修涂</a></dd></dl></li>
+<li class="last"><dl><dt class="vertical-img"><a href="#" class="box-img"><img width="100" height="100" alt="供应忆江南幻图漆水性艺术涂料，新型家装建材涂料" src="images/14-34-08-69-10953.jpg.thumb.jpg" data-bd-imgshare-binded="1"></a></dt><dd class="description"><a href="/sell/show-289565.html" title="供应忆江南幻图漆水性艺术涂料，新型家装建材涂料">供应忆江南幻图漆水性艺术涂料，新型家装建</a></dd></dl></li>
+</ul>
+</div>
+</article>
+</section>
+<section class="flinks layout">
+<header class="header"><h3 class="ms-yh"><a href="/link/" rel="nofollow">友情链接<i></i></a></h3></header><a href="/link/" rel="nofollow">
+</a><div class="content"><a href="/link/" rel="nofollow">
+</a><ul class="clearfix"><a href="/link/" rel="nofollow">
+</a><li><a href="/link/" rel="nofollow"></a><a title="QQ:2573124889" target="_blank" href="#">中国机械之家</a></li>
+<li><a title="" href="#">我富网</a></li>
+<li><a title="" href="#">中国IGBT网</a></li>
+<li><a title="" href="#">婚庆用品网</a></li>
+<li><a title="" href="#">天罗地网</a></li>
+<li><a title="" href="#">木地板</a></li>
+<li><a title="" href="#">免费b2b电子商务网站</a></li>
+<li><a title="" href="#">聚享商务网</a></li>
+<li><a title="" href="#">外贸服装批发</a></li>
+<li><a title="" href="#">威海分类信息</a></li>
+<li><a title="14.2.23" href="#">天津跳蚤市场</a></li>
+<li><a title="" target="_blank" href="#">GG黄页</a></li>
+<li><a title="" target="_blank" href="#">中国五金网</a></li>
+<li><a title="qq：1901317781" href="#">商务网</a></li>
+<li><a title="" href="#">润滑油网</a></li>
+<li><a title="649906825" href="#">北京二手房</a></li>
+<li><a title="" href="#">机床工具网</a></li>
+<li><a title="" href="#">惠惠品类大全</a></li>
+</ul></div>
+</section>
+
+<div class="clear"></div>
+</div></div>
+<div class="footer">
+	<div class="main">
+    <div class="footer_lf">
+        <p> <a data-scode="50021" rel="nofollow" href="#">关于我们</a>|<a data-scode="50022" rel="nofollow" href="#">会员服务</a>|<a data-scode="50031" rel="nofollow" href="#">直达供应商</a>|<a data-scode="50023" rel="nofollow" href="#">广告服务</a>|<a data-scode="50024" rel="nofollow" href="#">成功故事</a>|<a data-scode="50027" rel="nofollow" href="#">网站导航</a>|<a data-scode="50028" rel="nofollow" href="#">客服中心</a>|<a data-scode="50029" rel="nofollow" href="#">友情链接</a>|<a data-scode="50030" rel="nofollow" href="#">联系我们</a> </p>
+        <p class="zgft">主办单位:新疆千域千予科技有限公司 <a href="http://www.miibeian.gov.cn/">新ICP证 040089号</a>新公网安备11010502022114 </p>
+    <p class="zgft">版权所有 新疆千域千予科技有限公司(www.q.cc)</p>
+      <span style="margin-left: 5px;"><a rel="nofollow" target="_blank" href="#"><img height="35" src="images/police.jpg"></a> <a rel="nofollow" target="_blank" href="#"><img height="35" alt="" src="images/cxwz.gif"></a> <span style="display:inline-block;position:relative;width:auto;"><a style="display:inline-block;" kx_type="图标式" target="_blank" tabindex="-1" id="kx_verify" href="#"><img alt="可信网站" oncontextmenu="return false;" style="border:none;" src="images/cnnic.png"></a></span> </span>
+    </div>
+    <div class="footer_rt">
+        <p class="ftrt">客服电话：（周一至周五9:00-18:00）</p>
+        <p class="ph_ft"><img alt="400-010-1866" src="images/ph_400.jpg"></p>
+        <p>客服邮箱：kefu@q.cc</p>
+        <div class="ft_gz">关注我们：<a title="新浪微博" rel="nofollow" href="http://e.weibo.com/qianyu"><img align="top" alt="" src="images/Weibo_Logo.jpg"></a> <a title="QQ空间" rel="nofollow" href="http://user.qzone.qq.com/125346033"><img align="top" alt="" src="images/Qzone_Logo.jpg"></a> <a id="s_weixin" href="javascript:;"><div class="s_weixin"></div></a> </div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

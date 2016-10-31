@@ -1,0 +1,61 @@
+.i_header{ margin-bottom:12px;}
+#wrap {height: 210px;overflow: hidden;position: relative;width: 498px;}
+#KinSlideshow {display: block;width: 498px;height: 180px;overflow: hidden;}
+.industry_item dt i {display: block;float: left;height: 16px;margin: 5px 3px 0 0;width: 16px;}
+#mumSl { background: none repeat scroll 0 0 #5F6BB3; bottom: 0; color: #FFFFFF; display: block; height: 30px; line-height: 30px; overflow: hidden; position: absolute; width: 100%;}
+#adTurn {height: 116px; overflow: hidden; margin-top:8px;}
+#adTurn a {display: block;float: left;height: 116px;padding-right: 6px;width: 120px;}
+#adTurn a.last{ padding-right:0;}
+#mumSl li {display: block;float: left;overflow: hidden;text-align: center;}
+#mumSl li a { color: #FFFFFF;}
+.inNow {background: none repeat scroll 0 0 #EBF0F6; color: #333333; font-weight: 700;}
+#mumSl li.inNow a {color: #363636;}
+#lb {background-position: 0 -450px;border: 1px solid #DDDDDD;height: 36px;line-height: 18px;margin: 10px 0;overflow: hidden; padding: 2px 0 2px 50px;position: relative;width: 448px;z-index: 1;}
+#lb li {color: #777777;height: 18px;}
+#lb li a {color: #FF7300;}
+#lb .poa {display: inline-block;height: 40px;left: 0;position: absolute;top: 0;width: 40px;background:url(../images/all_status.gif) left -50px no-repeat;font-size:0;}
+/*icon*/
+.tubiaoss span {display: block;float: left;}
+.tb_bg{ width:68px; height:59px; background:url(../images/all_status.gif) 0px -92px no-repeat; margin-right:8px; margin-bottom:10px;}
+.tubiaoss a{ display:block; margin:2px 2px 0px 2px; background-image:url(../images/all_status.gif); background-repeat:no-repeat; width:64px; height:5px;color:#757575; text-align:center; padding-top:35px;}
+.tubiaoss a:hover{ color:#ee4735;}
+.tb01{ background-position: -40px -45px;}
+.tb01:hover{ color:#ee4735;}
+.tubiaoss .tb02a{ background-position:-92px -45px;}
+.tubiaoss .tb04{ background-position:-148px -45px;}
+.tubiaoss .tb13{ background-position:-68px -92px;}
+.tubiaoss .tb05{ background-position:-125px -95px;}
+.tubiaoss .tb06a{ background-position:-178px -95px;}
+.tuijian{ background:url(../images/all_status.gif) left -154px no-repeat; width:16px; height:22px; position:absolute; margin-top:-40px; margin-left:-6px;}
+/*help*/
+.intro { border-top: 1px solid #EEEEEE;height: 150px;overflow: hidden;width: 253px;}
+.intro .tabNav { margin-left: -1px;}
+.intro .tabNav span {background: none repeat scroll 0 0 #F9F9F9;border-bottom: 1px solid #EBEBEB;border-left: 1px solid #EBEBEB;cursor: pointer;line-height: 28px;text-align: center;width: 83px; display:block; float:left;}
+.intro .tabNav span.last {border-left: 1px solid #E2E2E2; width: 85px;}
+.intro .tabNav span.current { background: none repeat scroll 0 0 #FFFFFF; border-bottom-color: #FFFFFF;}
+.intro .content {height: 112px;overflow: hidden;}
+.intro .tabCon {padding: 6px 10px 2px;}
+.intro .tabCon li {height: 22px; line-height: 24px; overflow: hidden;width: 100%;}
+/*广告*/
+.ad1000 {height: auto;overflow: hidden;padding: 5px 0 0 0;margin: 0 auto; width: 1000px;}
+.adx5 {display: block;height: auto;overflow: hidden;width: 100%; padding-left:10px;}
+.adx5 li {float: left;height: 127px;padding-bottom: 10px; width:170px; padding-left:10px;}
+/*hbFntWes*/
+@font-face {font-family: 'hbFntWes';src:url('font/fontawesome.eot');src:url('font/fontawesome.eot?#iefix') format('embedded-opentype'),
+url('font/fontawesome.woff') format('woff'),
+url('font/fontawesome.ttf') format('truetype'),
+url('font/fontawesome.svg#fontawesome') format('svg');font-weight: normal;font-style: normal;}
+.hbFntWes{font-family:'hbFntWes';font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;-webkit-font-smoothing: antialiased;font-size:16px;line-height:1;}
+.hbFntWes b{font-weight:normal;}
+.hbFntWes i{font-style:normal;}
+.hbFntWes a{display:inline-block;}
+.footer{ border-bottom:1px #f5f5f5 solid; border-top:1px #9f9f9f solid; background:url(../images/ft.png) repeat-x; height:147px;line-height:24px; width:100%; margin: 0 auto; }
+.footer .main{ width:1000px; margin:0 auto;}
+.footer_lf{ width:675px; padding:16px 0px 16px 20px; float:left;}
+.footer_lf p a{ color:#000; margin:0px 8px 0px 8px;}
+.footer_lf p.zgft{ color:#999; margin-left:3px; padding-left:4px;}
+.footer_lf span a img{ height:35px; margin:6px 0 0 1px;}
+.footer_rt{ float:right; width:224px; background:url(../images/f_m.png) no-repeat left 0; display:block; height:146px; padding-left:34px;}
+.footer_rt p.ftrt{ margin:16px 0px 10px 0px;}
+.footer_rt p.ph_ft{ margin-bottom:6px;}
+.footer_rt p.ft_gz img{padding:2px 1px 2px 2px; text-align:center; margin:0px 3px 0px 0px;}
