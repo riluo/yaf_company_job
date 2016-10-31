@@ -26,7 +26,14 @@ class BasicController extends BaseController
 
     public function indexAction()
     {
-        echo 'eee';
+        $site = \Yaf\Application::app()->getConfig()->site->toArray()['siteUrl'];
+        $domainName = str_replace('.test.com','',$_SERVER['HTTP_HOST']);
+        if($domainName != 'www' && strlen($domainName) > 0) {
+            $userName = $domainName;
+        }
+        echo $userName;
+        //随机用户名
+        echo mt_rand(10, 99) . uniqid() . mt_rand(0, 9);
         return false;
     }
 
